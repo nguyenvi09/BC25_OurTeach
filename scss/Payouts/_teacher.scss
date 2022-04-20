@@ -1,0 +1,10 @@
+.teachers{
+    .card{
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 35px;
+        .card-title{
+            @include styleText($fs-1, $fw-1, $color-purple);
+        }
+    }
+}

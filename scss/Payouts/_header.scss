@@ -1,6 +1,7 @@
 
 header{
     position: fixed;
+    top: 0;
     z-index: 2;
     width: 100%;
     .navbar{
@@ -11,7 +12,7 @@ header{
             justify-content: end;
 
             .navbar-nav{
-                gap: 30px;
+                gap: 20px;
 
                 .nav-item{
                     .nav-link{

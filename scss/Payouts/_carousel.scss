@@ -1,0 +1,26 @@
+.carousel{
+    .bg-top{
+        position: absolute;
+        top: -140px;
+        left: -90px;
+        width: 100%;
+    }
+
+    .bg-bottom{
+        position: absolute;
+        top: 333px;
+        left: 0;
+        width: 100%;
+    }
+    .container{
+        margin-top: 75px;
+
+        h4{
+            @include styleText($fs-2, $fw-1, $color-purple);
+        }
+        
+        h1{
+            @include styleText($fs-3, $fw-2, $color-black);
+        }
+    }
+}

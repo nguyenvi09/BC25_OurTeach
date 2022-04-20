@@ -10,6 +10,7 @@
 
 header {
   position: fixed;
+  top: 0;
   z-index: 2;
   width: 100%;
 }
@@ -23,7 +24,7 @@ header .navbar-expand-md .navbar-collapse {
 }
 
 header .navbar-expand-md .navbar-collapse .navbar-nav {
-  gap: 30px;
+  gap: 20px;
 }
 
 header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -66,6 +67,48 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a {
 }
 
 header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover {
+  color: #b61984;
+}
+
+.carousel .bg-top {
+  position: absolute;
+  top: -140px;
+  left: -90px;
+  width: 100%;
+}
+
+.carousel .bg-bottom {
+  position: absolute;
+  top: 333px;
+  left: 0;
+  width: 100%;
+}
+
+.carousel .container {
+  margin-top: 75px;
+}
+
+.carousel .container h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #b61984;
+}
+
+.carousel .container h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: black;
+}
+
+.teachers .card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.teachers .card .card-title {
+  font-size: 15px;
+  font-weight: 500;
   color: #b61984;
 }
 /*# sourceMappingURL=main.css.map */
