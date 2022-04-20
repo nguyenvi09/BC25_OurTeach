@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-right .navbar ul {
+  display: flex;
+  gap: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+/*# sourceMappingURL=main.css.map */

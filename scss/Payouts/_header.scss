@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    justify-content: space-between;
+
+    .nav-right{
+        display: flex;
+        justify-content: space-between;
+
+        .navbar ul{
+            display: flex;
+            gap: 20px;
+            text-transform: capitalize;
+            font-weight: $fw-1;    
+        }
+    }
+}
