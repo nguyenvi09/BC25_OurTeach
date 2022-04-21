@@ -3,8 +3,23 @@
         border-radius: 10px;
         overflow: hidden;
         margin-bottom: 35px;
+        transition: all .5s;
+        &:hover{
+            box-shadow: 5px 10px 20px rgb(209, 205, 205);
+        }
+
         .card-title{
             @include styleText($fs-1, $fw-1, $color-purple);
         }
+
+        
+            .card-img-top{
+                width: 100%;
+                transition: all 1s;
+                &:hover{
+                    transform: scale(105%);
+                    overflow: hidden;
+                }
+            }
     }
 }
