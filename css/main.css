@@ -72,15 +72,21 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
 
 .carousel .bg-top {
   position: absolute;
-  top: -140px;
-  left: -90px;
+  top: -75px;
+  left: 0;
+}
+
+.carousel .bg-top img {
   width: 100%;
 }
 
 .carousel .bg-bottom {
   position: absolute;
-  top: 333px;
+  bottom: -10px;
   left: 0;
+}
+
+.carousel .bg-bottom img {
   width: 100%;
 }
 
@@ -127,9 +133,19 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
   overflow: hidden;
 }
 
+.find-course {
+  position: relative;
+  z-index: 3;
+}
+
 .find-course .form {
   padding: 20px;
   box-shadow: 5px 10px 20px #d1cdcd;
+  background-color: white;
+}
+
+footer {
+  position: relative;
 }
 
 footer .title {
@@ -153,5 +169,47 @@ footer i, footer span, footer a {
 footer a:hover {
   color: grey;
   text-decoration: none;
+}
+
+footer .footer-input {
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.304);
+  transition: all .5s;
+  margin-bottom: 10px;
+}
+
+footer .footer-input:focus {
+  border: 1px solid white;
+}
+
+footer .footer-btn {
+  padding: 10px 75px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+footer .footer-bg-top {
+  position: absolute;
+  top: -463px;
+}
+
+footer .footer-bg-top img {
+  max-width: 100%;
+}
+
+footer .footer-bg-bot {
+  position: absolute;
+  bottom: -109px;
+}
+
+footer .footer-bg-bot img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

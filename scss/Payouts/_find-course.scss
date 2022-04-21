@@ -1,7 +1,9 @@
 .find-course{
+    position: relative;
+    z-index: 3;
     .form{
         padding: 20px;
         box-shadow: 5px 10px 20px rgb(209, 205, 205);
-
+        background-color: $color-white;
     }
 }

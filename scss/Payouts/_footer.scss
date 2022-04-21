@@ -1,4 +1,5 @@
 footer{
+    position: relative;
     .title{
         @include styleText($fs-4, $fw-2, $color-white);
     }
@@ -16,5 +17,46 @@ footer{
     a:hover{
         color: grey;
         text-decoration: none;
+    }
+
+    .footer-input{
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: $color-white;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.304);
+        transition: all .5s;
+        margin-bottom: 10px;
+
+        &:focus{
+            border: 1px solid $color-white;
+
+        }
+    }
+
+    .footer-btn{
+        padding: 10px 75px;
+        border-radius: 30px;
+        border: 1px solid $color-white;
+        background-color: $color-white;
+        @include styleText($fs-2, $fw-1, $color-black);
+    }
+
+    .footer-bg-top{
+        position: absolute;
+        top: -463px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .footer-bg-bot{
+        position: absolute;
+        bottom: -109px;
+
+        img{
+            max-width: 100%;
+        }
     }
 }

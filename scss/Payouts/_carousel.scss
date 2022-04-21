@@ -1,17 +1,32 @@
 .carousel{
     .bg-top{
         position: absolute;
-        top: -140px;
-        left: -90px;
-        width: 100%;
+        top: -75px;
+        left: 0;
+        
+        img{
+            width: 100%;
+        }
     }
-
     .bg-bottom{
         position: absolute;
-        top: 333px;
+        bottom: -10px;
         left: 0;
-        width: 100%;
+
+        img{
+            width: 100%;
+        }
     }
+
+    // .bg-bottom-2{
+    //     position: absolute;
+    //     bottom: -40px;
+        
+    //     img{
+    //         width: 100%;
+    //     }
+    // }
+
     .container{
         margin-top: 75px;
 
