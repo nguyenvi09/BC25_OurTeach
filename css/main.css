@@ -8,6 +8,23 @@
   list-style-type: none;
 }
 
+.btnPhone, .find-course .form .btnSend, .btnSub {
+  display: flex;
+  gap: 10px;
+  padding: 0.5rem 20px;
+  color: white;
+  border-radius: 50px;
+  background-color: #b61984;
+  border: 2px solid transparent;
+  transition: all 300ms ease;
+}
+
+.btnPhone:hover, .find-course .form .btnSend:hover, .btnSub:hover {
+  color: #b61984;
+  border: 2px solid #b61984;
+  background-color: white;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -35,23 +52,6 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #b61984;
-}
-
-header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .btnPhone {
-  display: flex;
-  gap: 10px;
-  padding: 0.5rem 20px;
-  color: white;
-  border-radius: 50px;
-  background-color: #b61984;
-  border: 2px solid transparent;
-  transition: all 300ms ease;
-}
-
-header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .btnPhone:hover {
-  color: #b61984;
-  border: 2px solid #b61984;
-  background-color: white;
 }
 
 header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon {
@@ -139,9 +139,46 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
 }
 
 .find-course .form {
-  padding: 20px;
-  box-shadow: 5px 10px 20px #d1cdcd;
+  border-radius: 10px;
   background-color: white;
+  box-shadow: 0 30px 30px -10px rgba(214, 211, 211, 0.549);
+  width: 80%;
+  padding: 0 20px;
+}
+
+.find-course .form .d-flex {
+  gap: 20px;
+}
+
+.find-course .form .d-flex .input-name, .find-course .form .d-flex .input-email {
+  position: relative;
+  z-index: 2;
+}
+
+.find-course .form .d-flex .input-name i, .find-course .form .d-flex .input-email i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  color: #b61984;
+}
+
+.find-course .form .form-control {
+  border-radius: 20px;
+  padding: 0 0 0 30px;
+  font-size: 15px;
+}
+
+.input-language, .input-message {
+  position: relative;
+}
+
+.input-language i, .input-message i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  color: #b61984;
 }
 
 footer {
@@ -183,16 +220,6 @@ footer .footer-input {
 
 footer .footer-input:focus {
   border: 1px solid white;
-}
-
-footer .footer-btn {
-  padding: 10px 75px;
-  border-radius: 30px;
-  border: 1px solid white;
-  background-color: white;
-  font-size: 18px;
-  font-weight: 500;
-  color: black;
 }
 
 footer .footer-bg-top {

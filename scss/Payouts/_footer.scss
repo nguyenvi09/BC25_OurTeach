@@ -34,14 +34,6 @@ footer{
         }
     }
 
-    .footer-btn{
-        padding: 10px 75px;
-        border-radius: 30px;
-        border: 1px solid $color-white;
-        background-color: $color-white;
-        @include styleText($fs-2, $fw-1, $color-black);
-    }
-
     .footer-bg-top{
         position: absolute;
         top: -463px;
@@ -59,4 +51,8 @@ footer{
             max-width: 100%;
         }
     }
+}
+
+.btnSub{
+    @extend .btnPhone;
 }

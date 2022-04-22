@@ -90,12 +90,12 @@
       </div>
     </header>
     <section class="carousel">
-      <div class="bg-top">
+      <!-- <div class="bg-top">
         <img src="./images/yellow_top_wave_01.png" alt="" />
       </div>
       <div class="bg-bottom">
         <img src="./images/Violet_top_left_wave.png" alt="" />
-      </div>
+      </div> -->
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6">
@@ -103,7 +103,7 @@
             <h1>The language teaching experts</h1>
           </div>
           <div class="col-12 col-lg-6">
-            <img src="./images/hero_team.png" alt="" />
+            <img class="w-100" src="./images/hero_team.png" alt="" />
           </div>
         </div>
       </div>
@@ -215,41 +215,58 @@
     <section class="find-course">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-7">
             <img
+              class="w-100"
               src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/conatct_inner.png"
               alt=""
             />
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-5">
             <div class="form">
-              <h1 class="text-center">Find Your Course</h1>
+              <h1 class="text-center mb-5">Find Your Course</h1>
               <form>
                 <div class="form-group d-flex">
-                  <input type="text" class="form-control" placeholder="Name" />
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
+                  <div class="input-name">
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="input-email">
+                    <i class="fas fa-envelope"></i>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>France</option>
-                    <option>English</option>
-                    <option>Spanish</option>
-                    <option>German</option>
-                  </select>
+                  <div class="input-language">
+                    <i class="fas fa-graduation-cap"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>France</option>
+                      <option>English</option>
+                      <option>Spanish</option>
+                      <option>German</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="Message"
-                  ></textarea>
+                  <div class="input-message">
+                    <i class="fas fa-comment-alt"></i>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
                 </div>
-                <button type="submit" class="btn">Send</button>
+                <button type="submit" class="btnSend mt-5 mb-5">Send</button>
               </form>
             </div>
           </div>
@@ -257,13 +274,13 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="text-lg-start">
-      <div class="footer-bg-top">
+    <footer class="bg-dark text-lg-start">
+      <!-- <div class="footer-bg-top">
         <img src="./images/accent_bottom_wave_01.png" alt="" />
       </div>
       <div class="footer-bg-bot">
         <img src="./images/footer_background.jpg" alt="" />
-      </div>
+      </div> -->
       <!-- Grid container -->
       <div class="container p-4">
         <!--Grid row-->
@@ -345,7 +362,7 @@
                 class="text-center footer-input"
               />
             </div>
-            <button class="btn btn-danger footer-btn">SUBSCRIBE</button>
+            <button class="btnSub">SUBSCRIBE</button>
           </div>
           <!--Grid column-->
         </div>

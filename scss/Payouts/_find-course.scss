@@ -2,8 +2,47 @@
     position: relative;
     z-index: 3;
     .form{
-        padding: 20px;
-        box-shadow: 5px 10px 20px rgb(209, 205, 205);
+        border-radius: 10px;
         background-color: $color-white;
+        box-shadow: 0 30px 30px -10px rgba(214, 211, 211, 0.549);
+        width: 80%;
+        padding: 0 20px;
+
+        .d-flex{
+            gap: 20px;
+            .input-name, .input-email{
+                position: relative;
+                z-index: 2;
+                i{
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    z-index: 1;
+                    color: $color-purple;
+
+                }
+            }
+        }
+
+        .form-control{
+            border-radius: 20px;
+            padding: 0 0 0 30px;
+            font-size: $fs-1;
+        }
+
+        .btnSend{
+            @extend .btnPhone;
+        }
+    }   
+}
+
+.input-language, .input-message{
+    position: relative;
+    i{
+        position: absolute;
+        top: 10px;  
+        left: 10px;
+        z-index: 1;
+        color: $color-purple;
     }
 }
