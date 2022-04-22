@@ -1,5 +1,9 @@
 footer{
-    position: relative;
+    padding: 50px 0 200px 0;
+    background-image: url("../../images/footer_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     .title{
         @include styleText($fs-4, $fw-2, $color-white);
     }
@@ -55,4 +59,6 @@ footer{
 
 .btnSub{
     @extend .btnPhone;
+    padding: 10px 70px;
+    margin: 0 auto;
 }

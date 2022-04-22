@@ -28,7 +28,7 @@
 header {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
 }
 
@@ -74,6 +74,7 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
   position: absolute;
   top: -75px;
   left: 0;
+  right: 0;
 }
 
 .carousel .bg-top img {
@@ -82,8 +83,9 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
 
 .carousel .bg-bottom {
   position: absolute;
-  bottom: -10px;
+  bottom: -50px;
   left: 0;
+  right: 0;
 }
 
 .carousel .bg-bottom img {
@@ -143,7 +145,7 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
   background-color: white;
   box-shadow: 0 30px 30px -10px rgba(214, 211, 211, 0.549);
   width: 80%;
-  padding: 0 20px;
+  padding: 10px 20px 30px;
 }
 
 .find-course .form .d-flex {
@@ -169,6 +171,15 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
   font-size: 15px;
 }
 
+.find-course .form .btnSend {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .input-language, .input-message {
   position: relative;
 }
@@ -182,7 +193,11 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
 }
 
 footer {
-  position: relative;
+  padding: 50px 0 200px 0;
+  background-image: url("../../images/footer_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 footer .title {
@@ -238,5 +253,10 @@ footer .footer-bg-bot {
 
 footer .footer-bg-bot img {
   max-width: 100%;
+}
+
+.btnSub {
+  padding: 10px 70px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
