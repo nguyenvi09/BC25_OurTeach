@@ -10,8 +10,7 @@
         "../scss/Payouts/_carousel.scss",
         "../scss/Payouts/_teacher.scss",
         "../scss/Payouts/_find-course.scss",
-        "../scss/Payouts/_footer.scss",
-        "../scss/Payouts/_body.scss"
+        "../scss/Payouts/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
