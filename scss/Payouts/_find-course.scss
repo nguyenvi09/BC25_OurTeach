@@ -1,10 +1,20 @@
 .find-course{
     position: relative;
     z-index: 3;
+    .find-course__bg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        img{
+            width: 100%;
+        }
+    }
     .form{
         border-radius: 10px;
         background-color: $color-white;
-        box-shadow: 0 30px 30px -10px rgba(214, 211, 211, 0.549);
+        box-shadow: 0 30px 30px -10px rgba(157, 149, 149, 0.55);
         width: 80%;
         padding: 10px 20px 30px;
 

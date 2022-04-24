@@ -1,4 +1,16 @@
 .teachers{
+    position: relative;
+    .teacher-bg{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #dcd1f0;
+        
+        img{
+            width: 100%;
+        }
+    }
     .card{
         border-radius: 10px;
         overflow: hidden;

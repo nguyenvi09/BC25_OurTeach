@@ -108,6 +108,22 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
   color: black;
 }
 
+.teachers {
+  position: relative;
+}
+
+.teachers .teacher-bg {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: #dcd1f0;
+}
+
+.teachers .teacher-bg img {
+  width: 100%;
+}
+
 .teachers .card {
   border-radius: 10px;
   overflow: hidden;
@@ -140,10 +156,21 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
   z-index: 3;
 }
 
+.find-course .find-course__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.find-course .find-course__bg img {
+  width: 100%;
+}
+
 .find-course .form {
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 30px 30px -10px rgba(214, 211, 211, 0.549);
+  box-shadow: 0 30px 30px -10px rgba(157, 149, 149, 0.55);
   width: 80%;
   padding: 10px 20px 30px;
 }
