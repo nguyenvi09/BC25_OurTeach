@@ -15,3 +15,11 @@ $fs-1: 15px;
 $fs-2: 18px;
 $fs-3: 60px;
 $fs-4: 24px;
+
+//responsive
+$breakpoints: (
+    'extra-large': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px
+)

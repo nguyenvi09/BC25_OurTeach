@@ -70,6 +70,12 @@ header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover
   color: #b61984;
 }
 
+@media screen and (max-width: 1200px) {
+  header .container {
+    display: flex;
+  }
+}
+
 .carousel .bg-top {
   position: absolute;
   top: -75px;

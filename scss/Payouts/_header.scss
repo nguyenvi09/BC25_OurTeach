@@ -19,6 +19,8 @@ header{
     top: 0;
     z-index: 10;
     width: 100%;
+
+
     .navbar{
         padding: 0;
     }
@@ -59,4 +61,32 @@ header{
         }
     } 
         
+}
+
+@include responsive(extra-large){
+    header{
+        .container{
+            display: flex;
+        }
+    }
+
+    // .navbar-expand-md .navbar-collapse{
+    //     display: none !important;
+    // }
+
+    // .collapse:not(.show){
+    //     display: none;
+    // }
+
+    // .navbar-toggler{
+    //     display: block !important;
+    //     background-color: $color-black;
+    //     position: relative;
+    //     z-index: 99;
+    // }
+
+}
+
+@include responsive(medium){
+    
 }
