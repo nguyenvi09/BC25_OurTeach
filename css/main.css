@@ -153,7 +153,11 @@ header .navbar .navbar-nav .sn-icon a:hover {
     display: none !important;
   }
   .navbar-brand {
-    display: none;
+    display: block;
+    margin-left: 20px;
+  }
+  .navbar-brand img {
+    width: 60%;
   }
 }
 
