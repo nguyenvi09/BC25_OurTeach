@@ -141,7 +141,23 @@ header{
 
 @include responsive(extra-large){
     .btn-toggle{
+        background-color: transparent;
         display: block;
+        i{
+            font-size: 30px;
+        }
+    }
+
+    .navbar{
+        justify-content: start !important;
+    }
+
+    .navbar-nav{
+        display: none !important;
+    }
+
+    .navbar-brand{
+        display: none;
     }
 
 }
