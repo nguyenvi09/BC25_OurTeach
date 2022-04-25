@@ -20,70 +20,129 @@ header{
     z-index: 10;
     width: 100%;
 
-
     .navbar{
-        padding: 0;
-    }
-    .navbar-expand-md{
-        .navbar-collapse{
-            justify-content: end;
+        justify-content: space-between;
 
-            .navbar-nav{
-                gap: 20px;
+        .navbar-nav{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
 
-                .nav-item{
-                    .nav-link{
-                        text-transform: capitalize;
-                        color: $color-black;
-                        font-weight: $fw-1;
+            .nav-link{
+                text-transform: capitalize;
+                @include styleText($fs-1, $fw-1, $color-black);
 
-                        &:hover{
-                            color: $color-purple;
-                        }
-                    }
-
-                    .sn-icon{
-                        padding: 0.5rem 0;
-                        display: flex;
-                        gap: 10px;
-                        font-size: 12px;
-                        
-                        a{
-                            color: $color-black;
-                            transition: 0.5s all;
-                            &:hover{
-                                color: $color-purple;
-                            }
-                        }
-                    }
+                &:hover{
+                    color: $color-purple;
                 }
             }
-        }
-    } 
-        
-}
 
-@include responsive(extra-large){
-    header{
-        .container{
-            display: flex;
+            .sn-icon{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                a{
+                    color: $color-black;
+                    &:hover{
+                        color: $color-purple;
+                    }
+                }
+
+                
+            }
         }
     }
+}
 
-    // .navbar-expand-md .navbar-collapse{
-    //     display: none !important;
-    // }
+.btn-toggle{
+    display: none;
+}
 
-    // .collapse:not(.show){
-    //     display: none;
-    // }
+/* The side navigation menu */
+.sidenav {
+    text-align: center;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: $color-white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 
-    // .navbar-toggler{
-    //     display: block !important;
-    //     background-color: $color-black;
-    //     position: relative;
-    //     z-index: 99;
-    // }
+    .sn-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+                a{
+                    color: $color-black;
+                    &:hover{
+                        color: $color-purple;
+                    }
+                }
+    }
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    @extend .nav-link;
+    text-transform: capitalize;
+    @include styleText($fs-1, $fw-1, $color-black);
+
+    &:hover{
+        color: $color-purple;
+    }
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive(extra-large){
+    .btn-toggle{
+        display: block;
+    }
 
 }
 

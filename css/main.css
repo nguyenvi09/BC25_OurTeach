@@ -33,46 +33,114 @@ header {
 }
 
 header .navbar {
+  justify-content: space-between;
+}
+
+header .navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   padding: 0;
 }
 
-header .navbar-expand-md .navbar-collapse {
-  justify-content: end;
-}
-
-header .navbar-expand-md .navbar-collapse .navbar-nav {
-  gap: 20px;
-}
-
-header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .nav-link {
+header .navbar .navbar-nav .nav-link, header .navbar .navbar-nav .sidenav a, .sidenav header .navbar .navbar-nav a {
   text-transform: capitalize;
-  color: black;
+  font-size: 15px;
   font-weight: 500;
-}
-
-header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  color: #b61984;
-}
-
-header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon {
-  padding: 0.5rem 0;
-  display: flex;
-  gap: 10px;
-  font-size: 12px;
-}
-
-header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a {
   color: black;
-  transition: 0.5s all;
 }
 
-header .navbar-expand-md .navbar-collapse .navbar-nav .nav-item .sn-icon a:hover {
+header .navbar .navbar-nav .nav-link:hover, header .navbar .navbar-nav .sidenav a:hover, .sidenav header .navbar .navbar-nav a:hover {
   color: #b61984;
+}
+
+header .navbar .navbar-nav .sn-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .navbar .navbar-nav .sn-icon a {
+  color: black;
+}
+
+header .navbar .navbar-nav .sn-icon a:hover {
+  color: #b61984;
+}
+
+.btn-toggle {
+  display: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+  text-align: center;
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .sn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidenav .sn-icon a {
+  color: black;
+}
+
+.sidenav .sn-icon a:hover {
+  color: #b61984;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #b61984;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 @media screen and (max-width: 1200px) {
-  header .container {
-    display: flex;
+  .btn-toggle {
+    display: block;
   }
 }
 
