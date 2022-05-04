@@ -312,7 +312,7 @@ header .navbar .navbar-nav .sn-icon a:hover {
 
 footer {
   padding: 50px 0 200px 0;
-  background-image: url("./../../images/footerbg.jpg");
+  background-image: url("./../images/footerbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
